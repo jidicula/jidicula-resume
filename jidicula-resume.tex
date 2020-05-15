@@ -1,0 +1,268 @@
+%% jidicula-resume.tex
+% Copyright 2020 Johanan Idicula
+%
+% LICENSE
+% Copyright 2020 Johanan Idicula
+
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License, either version 1.3
+% of this license or (at your option) any later version.
+% The latest version of this license is in
+% http://www.latex-project.org/lppl.txt
+% and version 1.3 or later is part of all distributions of LaTeX
+% version 2005/12/01 or later.
+
+% This work has the LPPL maintenance status `maintained'.
+
+% The Current Maintainer of this work is Johanan Idicula.
+
+% This work consists of the file LICENSE, jidicula-resume.tex, jidicula-resume.cls .
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% This is a modified ONE COLUMN version of
+% the following template:
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+% 
+% jidicula-resume
+% LaTeX Template
+% Version 1.0 2020-05-15
+%
+% Johanan Idicula
+% 
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+% 
+% This template uses fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+\documentclass[]{jidicula-resume}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% 
+% LAST UPDATED DATE
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% TITLE NAME
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+
+\namesection{Johanan}{Idicula}
+{ \urlstyle{same}\href{http://bit.ly/jidicula_site}{jidicula.github.io}
+  | GitHub:// \href{http://bit.ly/jidicula_github}{\bf jidicula} \\
+  \href{tel:14506265558}{+1-450-626-5558}
+  | \href{mailto:johanan.idicula+resume@gmail.com}{johanan.idicula@gmail.com}
+  | Saint-Lambert, QC, Canada}
+
+\begin{center}
+  \huge\color{subheadings}\custombold{Software Developer}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Experience}
+
+\runsubsection{Junior Software Developer}
+\descript{Precision Analytics}
+\location{Sep 2019 -- Dec 2019 | Montr\'eal, QC}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Developed and enhanced customized data management, analysis, and
+  visualization \textbf{Shiny} dashboards using \textbf{R Tidyverse} libraries
+  for clients in the pharmaceutical and biotechnology sectors.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Research}
+\runsubsection{Undergraduate Research Assistant}
+\descript{Biological and Active Materials Lab, McGill University }
+\location{Oct 2015 -- Sep 2019 | Montr\'eal, QC}
+Worked with Professor Allen Ehrlicher on cell mechanics projects:
+
+\runsubsubsection{Probing the Mechanosensitivity of $\alpha$-actinin-4 |
+  \href{http://bit.ly/jidicula_fluoratio}{github.com/jidicula/fluoratio}}
+\textbf{| Python}
+\begin{tightemize}
+\item Analyzes and visualizes microscopy images using the \textbf{datetime},
+  \textbf{numpy}, \textbf{scikit-image}, and \textbf{seaborn} libraries.
+\item Achieved a $\frac{1}{N}$ runtime reduction using the Python3 \textbf{multiprocessing} library to parallelize the workflow using $N$ idle processor cores.
+\end{tightemize}
+\sectionsep
+\runsubsubsection{Magnetic Microrheology |
+  \href{http://bit.ly/jidicula_magtrack}{github.com/jidicula/magtrack}}
+\textbf{| Python}
+\begin{tightemize}
+  
+\item Worked with a Master's student to measure the material properties of cells using magnetic tweezers.
+
+\item Developed software to track objects in microscopy videos and load their
+  positions into DataFrames for analysis and visualization.
+\item Integrated the \textbf{Trackpy}, \textbf{pandas}, \textbf{numpy},
+  \textbf{scikit-image}, and \textbf{seaborn} libraries into workflow.
+\end{tightemize}
+\sectionsep
+\runsubsubsection{Cell Monolayer Deformation Microscopy |
+  Publication in review}
+\textbf{| MATLAB}
+\begin{tightemize}
+\item Quantifies and visualizes cell monolayer deformation from microscopy
+  images.
+\item \textbf{Cell Monolayer Deformation Microscopy – a new method to
+    measure the planar mechanical properties of cell monolayers}, 2020.\\
+  Amy A. Sutton, Clayton W. Molter, Ali Amini, \textbf{Johanan Idicula},
+  Max Furman, Pouria Tirgar, Yuanyuan Tao, Ajinkya Ghagre, Newsha Koushki, Adele Khavari, Allen J. Ehrlicher.
+
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education}
+\runsubsection{McGill University}
+\descript{B.Sc. Anatomy and Cell Biology}
+\location{May 2020 | Montr\'eal, QC, Canada}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Tech
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Tech}
+\begin{minipage}[t]{.32\textwidth}
+  \subsection{Languages}
+  \location{Advanced Knowledge of:}
+  Python \textbullet{} Java \textbullet{} MATLAB \textbullet{} Bash \textbullet{C} \\
+  \location{Familiarity with:}
+  \LaTeX \textbullet{} SQLite \\
+  R \textbullet{} MySQL
+  \sectionsep
+\end{minipage}
+\hfill
+\begin{minipage}[t]{.32\textwidth}
+  \subsection{Tools}
+  Git/GitHub \textbullet{} AWS \textbullet{} {Debian GNU/Linux} \\
+  Unix \textbullet{} macOS \textbullet{} TravisCI \textbullet{} HTML/CSS \\
+  Jira \textbullet{} Make \textbullet{} GDB \textbullet{} GNU gprof \\
+  GNU Emacs \textbullet{} Vim \textbullet{} GitHub Actions
+  \sectionsep
+\end{minipage}
+\hfill
+\begin{minipage}[t]{.32\textwidth}
+  \subsection{Concepts}
+  \location{Advanced Knowledge of:}
+  Image Analysis \textbullet{} Computer Vision \\
+  Data Visualization \textbullet{} Asynchrony \\
+  Agile Development \\
+  Modular Programming
+  
+  \location{Familiarity with:}
+  Multiprocessing \textbullet{} Data ETL \\
+  Automation \textbullet{}  RESTful APIs \\
+  Machine Learning \textbullet{} Data Exploration
+  \sectionsep
+\end{minipage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\section{Projects}
+
+\runsubsection{Canary}
+\descript{Discord Bot | Python}
+\location{Dec 2016 - Present | \href{https://github.com/idoneam/Canary}{github.com/idoneam/Canary}}
+\begin{tightemize}
+\item Founded and contributed to Canary, a McGill Discord chatbot.
+  \item Wrote a feature that fetches current weather conditions and warnings from Environment Canada using the \textbf{Requests} and \textbf{Beautiful Soup} libraries.
+  \item Wrote a feature that posts M\'etro service notifications using the \textbf{Requests} library and the Soci\'et\'e de Transport de Montr\'eal API.
+  \item Enhanced build quality by reviewing contributors' patches to ensure elegant implementation and successful integration.
+  \item Coordinated and delegated group efforts for bugfixes and 60 features by 17 contributors.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Pretinder}
+\descript{Proof of Concept for Tinder Exploit | Python}
+\location{Dec 2016 - Present | \href{https://github.com/jidicula/pretinder}{github.com/jidicula/pretinder}}
+\begin{tightemize}
+\item Exploited a Tinder RESTful API vulnerability to access premium features.
+\item Created a proof of concept using the \textbf{Requests} library to fetch and parse JSON responses for profile images hidden from non-Premium users, then compare them to profile images in the deck via \textbf{OpenCV} cross-correlation template matching.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% Languages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\section{Languages}
+\subsection{English}
+Native proficiency
+\sectionsep
+\subsection{French}
+Conversational and basic reading comprehension
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% Extracurriculars
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\section{Extracurriculars}
+\runsubsection{Discord Moderator} \location{McGill Discord chat}
+\location{2016--2019}
+\vspace{\topsep}
+\begin{tightemize}
+\item Built a social community for 200+ McGill students.
+\item Drafted rules of conduct to make the chat safe and enjoyable for all.
+\end{tightemize}
+\sectionsep
+\runsubsection{Bass Chorister} \location{| Church of St. John the Evangelist, Montr\'eal, QC}
+\location{2020--present}
+\vspace{\topsep}
+\begin{tightemize}
+\item Sings bass in an 8-voice choir specializing in ancient and classical choral music.
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% References
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{References}
+\subsection{Professor Allen J. Ehrlicher}
+\location{Associate Professor, Department of Bioengineering, McGill University}
+\href{mailto:allen.ehrlicher@mcgill.ca}{allen.ehrlicher@mcgill.ca}
+
+\href{tel:15147148239}{+1-514-714-8239}
+\sectionsep
+
+\subsection{Kathryn Morrison}
+\location{CTO, Precision Analytics}
+\href{mailto:contact@precision-analytics.ca}{contact@precision-analytics.ca}
+
+\href{tel:14384690502}{+1-438-469-0502}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Hobbies
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Hobbies}
+\sectionsep
+\begin{tightemize}
+\item Cooking
+\item Biking
+\item Guitar
+\item Indoor Gardening
+\item Tech Blogging: \href{http://bit.ly/jidicula_site}{jidicula.github.io}
+\end{tightemize}
+\sectionsep
+
+\end{document}
