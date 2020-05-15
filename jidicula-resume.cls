@@ -52,11 +52,20 @@
 % Date command
 \setlength{\TPHorizModule}{1mm}
 \setlength{\TPVertModule}{1mm}
-\textblockorigin{0mm}{5mm} % start everyth
+\textblockorigin{0mm}{5mm}
 \newcommand{\lastupdated}{\begin{textblock}{60}(165,0)
 \color{date}\fontspec{Helvetica Neue Light}\fontsize{8pt}{10pt}\selectfont 
 Last Updated on
 \today
+\end{textblock}}
+
+% Live location command
+\setlength{\TPHorizModule}{1mm}
+\setlength{\TPVertModule}{20mm}
+\textblockorigin{0mm}{5mm}
+\newcommand{\livelocation}[1]{\begin{textblock}{60}(0,0)
+\color{date}\fontspec{Helvetica Neue Light}\fontsize{8pt}{10pt}\selectfont
+Latest version at {#1}
 \end{textblock}}
 
 % Name command
