@@ -1,13 +1,15 @@
-name: Trigger netlify build
+# This is a basic workflow to help you get started with Actions
+
+name: netlify-build
 
 on: push
-
 jobs:
-  netlify-build:
-    name: Netlify Build
+  curl:
+    runs-on: ubuntu-latest
     steps:
-      - shell: bash
-        env:
-          NETLIFY_HASH: ${{ secrets.NETLIFY_HASH }}
-          run: |
-            curl -X POST -d {} 'https://api.netlify.com/build_hooks/'"$NETLIFY_HASH"
+    - name: curl
+      uses: wei/curl@v1
+      env:
+        NETLIFY_HASH: ${{ secrets.NETLIFY_HASH }}
+      with:
+        args: -X POST {} "https://api.netlify.com/build_hooks/$NETLIFY_HASH"
