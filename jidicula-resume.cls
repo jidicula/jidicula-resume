@@ -53,7 +53,7 @@
 \setlength{\TPHorizModule}{1mm}
 \setlength{\TPVertModule}{1mm}
 \textblockorigin{0mm}{5mm}
-\newcommand{\lastupdated}{\begin{textblock}{60}(165,0)
+\newcommand{\lastupdated}{\begin{textblock}{60}(160,0)
 \color{date}\fontspec{Helvetica Neue Light}\fontsize{8pt}{10pt}\selectfont 
 Last Updated on
 \today
