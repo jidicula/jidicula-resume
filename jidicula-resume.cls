@@ -49,24 +49,14 @@
 \setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Helvetica Neue UltraLight}
 \newcommand{\custombold}[1]{\color{subheadings}\fontspec{Helvetica Neue Medium}\selectfont #1 \normalfont}
 
-% Date command
-\setlength{\TPHorizModule}{1mm}
-\setlength{\TPVertModule}{1mm}
-\textblockorigin{0mm}{5mm}
-\newcommand{\lastupdated}{\begin{textblock}{60}(160,0)
-\color{date}\fontspec{Helvetica Neue Light}\fontsize{8pt}{10pt}\selectfont 
-Last Updated on
-\today
-\end{textblock}}
-
 % Live location command
-\setlength{\TPHorizModule}{1mm}
-\setlength{\TPVertModule}{20mm}
-\textblockorigin{0mm}{5mm}
-\newcommand{\livelocation}[1]{\begin{textblock}{60}(0,0)
-\color{date}\fontspec{Helvetica Neue Light}\fontsize{8pt}{10pt}\selectfont
-Latest version at {#1}
-\end{textblock}}
+\newcommand{\livelocation}{\color{date}\fontspec{Helvetica Neue Light}\fontsize{8pt}{10pt}\selectfont\noindent
+Latest version at \href{https://bit.ly/jidicula-resume}{bit.ly/jidicula-resume}}
+
+% Date command
+\newcommand{\lastupdated}{\color{date}\fontspec{Helvetica Neue Light}\fontsize{8pt}{10pt}\selectfont 
+Last Updated on
+\today}
 
 % Name command
 \newcommand{\namesection}[3]{
