@@ -53,25 +53,29 @@
 % TITLE NAME
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \namesection{Johanan}{Idicula}
-{ Blog: \urlstyle{same}\href{http://bit.ly/jidicula-site}{forcepush.tech}
-  | GitHub:// \href{http://bit.ly/jidicula_github}{\bf jidicula} | LinkedIn:// \href{https://bit.ly/jidicula-linkedin}{\bf jidicula} | Stack Overflow:// \href{http://bit.ly/jidicula-stackoverflow}{\bf jidicula} \\
+{ Blog: \urlstyle{same}\href{http://bit.ly/jidicula-site}{\bf forcepush.tech}
+  | GitHub: \href{http://bit.ly/jidicula_github}{\bf github.com/jidicula} | LinkedIn: \href{https://bit.ly/jidicula-linkedin}{\bf linkedin.com/in/jidicula} \\
+  Stack Overflow: \href{http://bit.ly/jidicula-stackoverflow}{\bf stackoverflow.com/users/story/6310633} \\
   \href{tel:14506265558}{+1-450-626-5558}
   | \href{mailto:johanan.idicula+resume@gmail.com}{johanan.idicula@gmail.com}
-  | Saint-Lambert, QC, Canada}
+  | Saint-Lambert, QC, Canada \\~\\
+{\Large Agile Developer That Leaves No Team Member Behind}
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Experience
+% Employment
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Experience}
+\section{Employment}
 
 \runsubsection{Software Developer}
 \descript{Digital HR, Department of National Defence, Government of Canada}
 \location{Oct 2020--Present | Remote}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Developing an applicant tracking system in \textbf{Django} used by over 1000 applicants and 300 managers (\href{https://civilian-careers-defence.canada.ca}{civilian-careers-defence.canada.ca}).
-\item Leading team's move towards a pure \textbf{CI/CD} workflow with automated build, test, and code quality checks.
-\item Scrum Master for a team of 9 developers and 2 UI/UX designers.
+\item Developing an applicant tracking system in \textbf{Django} used by over 1000 applicants and 300 managers (\href{https://civilian-careers-defence.canada.ca}{\bf civilian-careers-defence.canada.ca}).
+\item Leading team's move towards a pure \textbf{CI/CD} workflow with automated build, test, and code quality checks as well as autodeploy and autorelease workflows using \textbf{GitHub Actions}.
+\item Coached a team of 9 developers and 2 UI/UX designers by filling a Scrum Master-like role: coordinating team's \textbf{self-organization}, helping team members resolve roadblocks, and encouraging team's \textbf{openness} and \textbf{continuous improvement}.
+\item \textbf{Git} Guru for team, sharing knowledge about best practices for rebasing, cherrypicking, history editing, and merge conflict resolution.
 \end{tightemize}
 \sectionsep{}
 
@@ -80,9 +84,9 @@
 \location{Aug 2020--Present | Montr\'eal, QC}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Developed quantitative MRI shimming software (\href{http://bit.ly/jidicula-shimming-toolbox}{github.com/shimming-toolbox/shimming-toolbox}).
-\item Led architectural and project management decisions for software development.
-\item Migrated CI workflows from Travis CI to GitHub Actions for automated build and unit testing.
+\item Led architectural and project management decisions for development on shimming-toolbox, a \textbf{Python} tool for quantitative MRI data acquisition (\href{https://github.com/shimming-toolbox/shimming-toolbox}{\bf github.com/shimming-toolbox/shimming-toolbox}).
+\item Migrated CI workflows from \textbf{Travis CI} to \textbf{GitHub Actions} for automated build and unit testing.
+\item Currently providing code reviews and insight on technical decisions on a casual basis.
 \end{tightemize}
 \sectionsep{}
 
@@ -141,6 +145,73 @@ Worked with Professor Allen Ehrlicher on cell mechanics projects:
 \end{tightemize}
 \sectionsep{}
 
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Hobby Projects}
+
+\runsubsection{gamco-nav-check}
+\descript{Stock Value CLI Tool | Go, GitHub Actions}
+\location{Mar 2021--Present | \href{https://github.com/jidicula/gamco-nav-check}{github.com/jidicula/gamco-nav-check}}
+\begin{tightemize}
+\item Wrote a Go package (\href{https://github.com/jidicula/go-gamco}{\bf github.com/jidicula/go-gamco}) for wrapping GAMCO's API for their closed-end funds (\href{https://gabelli.com/funds/closed_ends}{gabelli.com/funds/closed\_ends}).
+\item Wrote a CLI tool using the above Go module to fetch latest net asset value of each GAMCO closed-end fund, compare it with the stock's latest price on Yahoo Finance, and output a list of funds with a NAV/Price difference of $\ge$10\%.
+\item Created CI/CD automations for both repositories using GitHub Actions for running lint, unit, and build tests as well as autorelease workflows for publishing new versions of the modules to pkg.go.dev.
+\end{tightemize}
+\sectionsep{}
+
+\runsubsection{random-standup}
+\descript{List Randomizer CLI Tool | Go, GitHub Actions}
+\location{Mar 2021--Present | \href{https://github.com/jidicula/random-standup}{github.com/jidicula/random-standup}}
+\begin{tightemize}
+\item Wrote a Go CLI tool for randomizing order of team updates in a standup.
+\item Created CI/CD automations using GitHub Actions for running lint, unit, and build tests as well as autorelease workflows for publishing new versions of the tool to pkg.go.dev.
+\end{tightemize}
+\sectionsep{}
+
+\runsubsection{Canary}
+\descript{Discord Bot | Python}
+\location{Dec 2016--2020 | \href{https://github.com/idoneam/Canary}{github.com/idoneam/Canary}}
+\begin{tightemize}
+\item Founded and contributed to Canary, a McGill Discord chatbot.
+  \item Wrote a feature that fetches current weather conditions and warnings from Environment Canada using the \textbf{Requests} and \textbf{Beautiful Soup} libraries.
+  \item Wrote a feature that posts M\'etro service notifications using the \textbf{Requests} library and the Soci\'et\'e de Transport de Montr\'eal API.
+  \item Enhanced code quality by reviewing contributors' patches to ensure elegant implementation and successful integration.
+  \item Coordinated and delegated group efforts for bugfixes and 60 features by 17 contributors.
+  \item Mentored and onboarded junior members by inviting new feature ideas and assigning them tickets suitable for beginners.
+\end{tightemize}
+\sectionsep{}
+
+\runsubsection{Pretinder}
+\descript{Proof of Concept for Tinder Exploit | Python}
+\location{Dec 2016--Present | \href{https://github.com/jidicula/pretinder}{github.com/jidicula/pretinder}}
+\begin{tightemize}
+\item Exploited a Tinder RESTful API vulnerability to access premium features.
+\item Created a proof of concept using the \textbf{Requests} library to accept and parse JSON responses for profile images hidden from non-Premium users, then compare them to profile images in the deck via \textbf{OpenCV} cross-correlation template matching.
+\end{tightemize}
+\sectionsep{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Languages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{Languages}
+% \subsection{English}
+% Native fluency
+% \sectionsep{}
+% \subsection{French}
+% Conversational and basic reading comprehension
+% \sectionsep{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education}
+\runsubsection{McGill University}
+\descript{B.Sc. Anatomy and Cell Biology}
+\location{May 2020 | Montr\'eal, QC, Canada}
+\sectionsep{}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Tech
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -183,87 +254,39 @@ Worked with Professor Allen Ehrlicher on cell mechanics projects:
   \sectionsep{}
 \end{minipage}
 
-\newpage
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Projects
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Projects}
-
-\runsubsection{Canary}
-\descript{Discord Bot | Python}
-\location{Dec 2016--2020 | \href{https://github.com/idoneam/Canary}{github.com/idoneam/Canary}}
-\begin{tightemize}
-\item Founded and contributed to Canary, a McGill Discord chatbot.
-  \item Wrote a feature that fetches current weather conditions and warnings from Environment Canada using the \textbf{Requests} and \textbf{Beautiful Soup} libraries.
-  \item Wrote a feature that posts M\'etro service notifications using the \textbf{Requests} library and the Soci\'et\'e de Transport de Montr\'eal API.
-  \item Enhanced code quality by reviewing contributors' patches to ensure elegant implementation and successful integration.
-  \item Coordinated and delegated group efforts for bugfixes and 60 features by 17 contributors.
-  \item Mentored and onboarded junior members by inviting new feature ideas and assigning them tickets suitable for beginners.
-\end{tightemize}
-\sectionsep{}
-
-\runsubsection{Pretinder}
-\descript{Proof of Concept for Tinder Exploit | Python}
-\location{Dec 2016--Present | \href{https://github.com/jidicula/pretinder}{github.com/jidicula/pretinder}}
-\begin{tightemize}
-\item Exploited a Tinder RESTful API vulnerability to access premium features.
-\item Created a proof of concept using the \textbf{Requests} library to accept and parse JSON responses for profile images hidden from non-Premium users, then compare them to profile images in the deck via \textbf{OpenCV} cross-correlation template matching.
-\end{tightemize}
-\sectionsep{}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Languages
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Languages}
-\subsection{English}
-Native fluency
-\sectionsep{}
-\subsection{French}
-Conversational and basic reading comprehension
-\sectionsep{}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Education
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Education}
-\runsubsection{McGill University}
-\descript{B.Sc. Anatomy and Cell Biology}
-\location{May 2020 | Montr\'eal, QC, Canada}
-\sectionsep{}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Extracurriculars
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Extracurriculars}
-\runsubsection{Discord Moderator} \location{McGill Discord chat}
-\location{2016--2019}
-\vspace{\topsep}
-\begin{tightemize}
-\item Built a social community for 200+ McGill students.
-\item Drafted rules of conduct to make the chat safe, inviting, and accepting for all.
-\end{tightemize}
-\sectionsep{}
-\runsubsection{Bass Chorister} \location{| Church of St.\ John the Evangelist, Montr\'eal, QC}
-\location{2020--present}
-\vspace{\topsep}
-\begin{tightemize}
-\item Sings bass in an 8-voice choir specializing in ancient and classical choral music.
-\end{tightemize}
-\sectionsep{}
+% \section{Extracurriculars}
+% \runsubsection{Discord Moderator} \location{McGill Discord chat}
+% \location{2016--2019}
+% \vspace{\topsep}
+% \begin{tightemize}
+% \item Built a social community for 200+ McGill students.
+% \item Drafted rules of conduct to make the chat safe, inviting, and accepting for all.
+% \end{tightemize}
+% \sectionsep{}
+% \runsubsection{Bass Chorister} \location{| Church of St.\ John the Evangelist, Montr\'eal, QC}
+% \location{2020--present}
+% \vspace{\topsep}
+% \begin{tightemize}
+% \item Sings bass in an 8-voice choir specializing in ancient and classical choral music.
+% \end{tightemize}
+% \sectionsep{}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Hobbies
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Hobbies}
-\sectionsep{}
-\begin{tightemize}
-\item Cooking
-\item Biking
-\item Guitar
-\item Indoor Gardening
-\item Tech Blogging: \href{http://bit.ly/jidicula-site}{forcepush.tech}
-\end{tightemize}
-\sectionsep{}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % Hobbies
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{Hobbies}
+% \sectionsep{}
+% \begin{tightemize}
+% \item Cooking
+% \item Biking
+% \item Guitar
+% \item Indoor Gardening
+% \item Tech Blogging: \href{http://bit.ly/jidicula-site}{forcepush.tech}
+% \end{tightemize}
+% \sectionsep{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % References
