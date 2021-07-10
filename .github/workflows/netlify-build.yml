@@ -2,7 +2,7 @@ name: netlify-build
 
 on: push
 jobs:
-  curl:
+  build-hook:
     runs-on: ubuntu-latest
     steps:
     - name: "Build hook"
