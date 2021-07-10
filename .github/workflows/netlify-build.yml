@@ -5,9 +5,7 @@ jobs:
   curl:
     runs-on: ubuntu-latest
     steps:
-    - name: curl
-      uses: wei/curl@v1
+    - name: "Build hook"
       env:
         NETLIFY_HASH: ${{ secrets.NETLIFY_HASH }}
-      with:
-        args: -X POST -d {} "https://api.netlify.com/build_hooks/$NETLIFY_HASH"
+      run: curl -X POST -d {} "https://api.netlify.com/build_hooks/$NETLIFY_HASH"
