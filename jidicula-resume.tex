@@ -65,12 +65,23 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Employment}
 
+\runsubsection{Software Engineer III}
+\descript{Actions Platform, GitHub}
+\location{Jul 2022--present | Remote}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Shipping platform features and bugfixes to integrate GitHub Actions and GitHub Packages with GitHub Enterprise products and github.com using \textbf{C\#}, \textbf{Powershell}, \textbf{Bash}, \textbf{Kubernetes}, \textbf{Go}, and \textbf{Ruby}.
+\item Created an end-to-end testing solution for GitHub Actions in GitHub AE.
+\item Managed an availability improvement effort for request routing in GitHub Actions.
+\end{tightemize}
+\sectionsep{}
+
 \runsubsection{Software Developer}
 \descript{Cloud Operations Services, Employment and Social Development Canada, Government of Canada}
 \location{Nov 2021--Jul 2022 | Remote}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Guided client teams in migrating their application workloads to Microsoft Azure effectively.
+\item Guided client teams in migrating their application workloads out of government data centres to Microsoft Azure effectively.
 \end{tightemize}
 \sectionsep{}
 
@@ -79,7 +90,7 @@
 \location{Oct 2021--Nov 2021 | Remote}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Developed cloud landing zones using \textbf{Terraform} and \textbf{Go} infrastructure-as-code.
+\item Developed cloud landing zones using \textbf{Terraform} and \textbf{Go} infrastructure-as-code with \textbf{Azure}.
 \end{tightemize}
 \sectionsep{}
 
@@ -88,8 +99,8 @@
 \location{Oct 2020--Oct 2021 | Remote}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Developed an applicant tracking system in \textbf{Django} used by over 3000 applicants and 600 managers (\href{https://civilian-careers-defence.canada.ca}{\bf civilian-careers-defence.canada.ca}).
-\item Led team's move towards a pure \textbf{CI/CD} workflow with automated build, test, and code quality checks as well as autodeploy and autorelease workflows using \textbf{GitHub Actions} and later ported to \textbf{Azure Pipelines}.
+\item Developed an applicant tracking system in \textbf{Django} used by over 3000 applicants and 600 managers.
+\item Led team's move towards a pure \textbf{CI/CD} workflow with automated build, test, and code quality checks as well as autodeploy and autorelease workflows using \textbf{GitHub Actions}, and later ported to \textbf{Azure Pipelines}.
 \item Coached a team of 9 developers and 2 UI/UX designers by filling a Scrum Master-like role: coordinating team's \textbf{self-organization}, helping team members resolve roadblocks, and encouraging team's \textbf{openness} and \textbf{continuous improvement}.
 \item \textbf{Git} Guru for team, shared knowledge about best practices for rebasing, cherrypicking, history editing, and merge conflict resolution.
 \end{tightemize}
@@ -97,7 +108,7 @@
 
 \runsubsection{Software Development Consultant}
 \descript{NeuroPoly, Polytechnique Montr\'eal}
-\location{Aug 2020--Mar 2021 | Montr\'eal, QC}
+\location{Aug 2020--Mar 2021 | Montr\'eal, QC, Canada}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
 \item Led architectural and project management decisions for development on shimming-toolbox, a \textbf{Python} tool for quantitative MRI data acquisition (\href{https://github.com/shimming-toolbox/shimming-toolbox}{\bf github.com/shimming-toolbox/shimming-toolbox}).
@@ -108,7 +119,7 @@
 
 \runsubsection{Junior Software Developer}
 \descript{Precision Analytics}
-\location{Sep 2019--Dec 2019 | Montr\'eal, QC}
+\location{Sep 2019--Dec 2019 | Montr\'eal, QC, Canada}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
 \item Developed laboratory information management systems with customized data
@@ -123,7 +134,7 @@
 \section{Research}
 \runsubsection{Undergraduate Research Assistant}
 \descript{Biological and Active Materials Lab, McGill University }
-\location{Oct 2015--Sep 2019 | Montr\'eal, QC}
+\location{Oct 2015--Sep 2019 | Montr\'eal, QC, Canada}
 Worked with Professor Allen Ehrlicher on cell mechanics projects:
 
 \runsubsubsection{Probing the Mechanosensitivity of $\alpha$-actinin-4 |
@@ -166,31 +177,22 @@ Worked with Professor Allen Ehrlicher on cell mechanics projects:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Hobby Projects}
 
+\runsubsection{clang-format-action}
+\descript{GitHub Action for clang-format checks | Bash, Docker, GitHub Actions}
+\location{Mar 2020--Present | \href{https://github.com/jidicula/clang-format-action}{github.com/jidicula/clang-format-action}}
+\begin{tightemize}
+\item GitHub Action for running clang-format checks in CI, used by $>$1500 public repositories, including projects by Microsoft, Cisco, Facebook, Apache, Intel, Bytedance, and Spotify.
+\item Supports clang-format versions from 3.9 (2016) onwards, covered with end-to-end CI tests.
+\end{tightemize}
+\sectionsep{}
+
 \runsubsection{gamco-nav-check}
 \descript{Stock Value CLI Tool | Go, GitHub Actions}
 \location{Mar 2021--Present | \href{https://github.com/jidicula/gamco-nav-check}{github.com/jidicula/gamco-nav-check}}
 \begin{tightemize}
-\item Wrote a Go package (\href{https://github.com/jidicula/go-gamco}{\bf github.com/jidicula/go-gamco}) for wrapping GAMCO's API for their closed-end funds (\href{https://gabelli.com/funds/closed_ends}{gabelli.com/funds/closed\_ends}).
-\item Wrote a CLI tool using the above Go module to fetch latest net asset value of each GAMCO closed-end fund, compare it with the stock's latest price on Yahoo Finance, and output a list of funds with a NAV/Price difference of $\ge$10\%.
+\item Go package (\href{https://github.com/jidicula/go-gamco}{\bf github.com/jidicula/go-gamco}) that wraps GAMCO's API for their closed-end funds (\href{https://gabelli.com/funds/closed_ends}{gabelli.com/funds/closed\_ends}).
+\item CLI tool that uses the above Go module to fetch the latest net asset value of each GAMCO closed-end fund, compare it with the stock's latest price on Yahoo Finance, and output a list of funds with a NAV/Price difference of $\ge$10\%.
 \item Created CI/CD automations for both repositories using GitHub Actions for running lint, unit, and build tests as well as autorelease workflows for publishing new versions of the modules to pkg.go.dev.
-\end{tightemize}
-\sectionsep{}
-
-\runsubsection{random-standup}
-\descript{List Randomizer CLI Tool | Go, GitHub Actions}
-\location{Mar 2021--Present | \href{https://github.com/jidicula/random-standup}{github.com/jidicula/random-standup}}
-\begin{tightemize}
-\item Wrote a Go CLI tool for randomizing order of team updates in a standup.
-\item Created CI/CD automations using GitHub Actions for running lint, unit, and build tests as well as autorelease workflows for publishing new versions of the tool to pkg.go.dev.
-\end{tightemize}
-\sectionsep{}
-
-\runsubsection{Pretinder}
-\descript{Proof of Concept for Tinder Exploit | Python}
-\location{Dec 2016--Present | \href{https://github.com/jidicula/pretinder}{github.com/jidicula/pretinder}}
-\begin{tightemize}
-\item Exploited a Tinder RESTful API vulnerability to access premium features.
-\item Created a proof of concept using the \textbf{Requests} library to accept and parse JSON responses for profile images hidden from non-Premium users, then compare them to profile images in the deck via \textbf{OpenCV} cross-correlation template matching.
 \end{tightemize}
 \sectionsep{}
 
@@ -244,19 +246,21 @@ Worked with Professor Allen Ehrlicher on cell mechanics projects:
   \location{Familiarity with:}
   \LaTeX{} \textbullet{} SQLite \textbullet{} R \textbullet{} MATLAB  \\
   MySQL \textbullet{} JavaScript \textbullet{} Java \\
-  C \textbullet{} Terraform
+  C \textbullet{} Terraform \textbullet{} C\# \textbullet{} Powershell \\
+  Ruby
   \sectionsep{}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{.32\textwidth}
   \subsection{Tools \& Libraries}
-  Git \textbullet{} AWS \textbullet{} {Debian GNU/Linux} \textbullet{} Unix \\
-  macOS \textbullet{} Travis CI \textbullet{} HTML/CSS \textbullet{} Jira \\
-  Make \textbullet{} GDB \textbullet{} gprof \textbullet{} Emacs \textbullet{} Vim \\
-  GitHub Actions \textbullet{} Docker \textbullet{} Pandas \\
-  OpenCV \textbullet{} Flask \textbullet{} Requests \textbullet{} pytest \\
-  Poetry \textbullet{} Notion \textbullet{} Django \textbullet{} Streamlit \\
-  Jupyter Notebook \textbullet{} Sphinx
+  Git \textbullet{} Azure \textbullet{} {Debian GNU/Linux} \textbullet{} Unix \\
+  Kubernetes \& Docker \textbullet{} macOS \\
+  Travis CI \textbullet{} HTML/CSS \textbullet{} Jira \textbullet{} \\
+  Make \textbullet{} GDB \textbullet{} gprof \textbullet{} Emacs \\
+  Vim \textbullet{} Pandas \textbullet{} OpenCV \textbullet{} Flask \\
+  Requests \textbullet{} pytest \textbullet{} Poetry \textbullet{} Django \\
+  Jupyter \textbullet{} Sphinx \textbullet{} OpenTelemetry \\
+  Datadog \textbullet{} Kusto \textbullet{} Splunk
   \sectionsep{}
 \end{minipage}
 \hfill
@@ -278,14 +282,6 @@ Worked with Professor Allen Ehrlicher on cell mechanics projects:
 % Extracurriculars
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % \section{Extracurriculars}
-% \runsubsection{Discord Moderator} \location{McGill Discord chat}
-% \location{2016--2019}
-% \vspace{\topsep}
-% \begin{tightemize}
-% \item Built a social community for 200+ McGill students.
-% \item Drafted rules of conduct to make the chat safe, inviting, and accepting for all.
-% \end{tightemize}
-% \sectionsep{}
 % \runsubsection{Bass Chorister} \location{| Church of St.\ John the Evangelist, Montr\'eal, QC}
 % \location{2020--present}
 % \vspace{\topsep}
@@ -317,12 +313,5 @@ Worked with Professor Allen Ehrlicher on cell mechanics projects:
 % \href{mailto:allen.ehrlicher@mcgill.ca}{allen.ehrlicher@mcgill.ca}
 
 % \href{tel:15147148239}{+1-514-714-8239}
-% \sectionsep
-
-% \subsection{Kathryn Morrison}
-% \location{CTO, Precision Analytics}
-% \href{mailto:contact@precision-analytics.ca}{contact@precision-analytics.ca}
-
-% \href{tel:14384690502}{+1-438-469-0502}
 % \sectionsep
 \end{document}
