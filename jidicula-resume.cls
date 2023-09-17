@@ -47,7 +47,11 @@
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont[Color=primary]{Helvetica Light}
 \setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Helvetica Neue UltraLight}
+\setmonofont[Mapping=tex-text]{SFMono Nerd Font}
 \newcommand{\custombold}[1]{\color{subheadings}\fontspec{Helvetica Neue Medium}\selectfont #1 \normalfont}
+
+% Allow underscores anywhere
+\catcode`\_=12
 
 % Live location command
 \newcommand{\livelocation}{\color{date}\fontspec{Helvetica Neue Light}\fontsize{8pt}{10pt}\selectfont\noindent

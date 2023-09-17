@@ -179,13 +179,14 @@ Worked with Professor Allen Ehrlicher on cell mechanics projects:
 \end{tightemize}
 \sectionsep{}
 
-\runsubsection{gamco-nav-check}
-\descript{Stock Value CLI Tool | Go, GitHub Actions}
-\location{Mar 2021--Present | \href{https://github.com/jidicula/gamco-nav-check}{github.com/jidicula/gamco-nav-check}}
+\runsubsection{cloudflare-cachebuster}
+\descript{Azure Function in Go that purges a site's Cloudflare cache | Go, GitHub Actions, Azure Functions, Cloudflare}
+\location{Jul 2022--Present | \href{https://github.com/jidicula/cloudflare-cachebuster}{github.com/jidicula/cloudflare-cachebuster}}
 \begin{tightemize}
-\item Go package (\href{https://github.com/jidicula/go-gamco}{\bf github.com/jidicula/go-gamco}) that wraps GAMCO's API for their closed-end funds (\href{https://gabelli.com/funds/closed_ends}{gabelli.com/funds/closed\_ends}).
-\item CLI tool that uses the above Go module to fetch the latest net asset value of each GAMCO closed-end fund, compare it with the stock's latest price on Yahoo Finance, and output a list of funds with a NAV/Price difference of $\ge$10\%.
-\item Created CI/CD automations for both repositories using GitHub Actions for running lint, unit, and build tests as well as autorelease workflows for publishing new versions of the modules to pkg.go.dev.
+\item \textbf{Azure Function} written in Go that proxies a call to Cloudflare's \texttt{purge_cache} API endpoint to purge a site's cache.
+\item I use this tool for building my personal website! This function purges the cache of \href{https://forcepush.tech}{forcepush.tech}, invoked via a post-deploy POST hook in \textbf{Netlify}.
+\item Previously deployed as a \textbf{Google Cloud Function} --- read my writeup at \href{https://bit.ly/cloudflare-cachebuster-gcp}{bit.ly/cloudflare-cachebuster-gcp}.
+\item Created CD automation using \textbf{GitHub Actions} build and deploy the serverless function as well as autorelease workflows for publishing new versions of the module to pkg.go.dev.
 \end{tightemize}
 \sectionsep{}
 
