@@ -55,7 +55,7 @@
 
 % Live location command
 \newcommand{\livelocation}{\color{date}\fontspec{Helvetica Neue Light}\fontsize{8pt}{10pt}\selectfont\noindent
-Latest version at \href{https://bit.ly/jidicula-resume}{bit.ly/jidicula-resume}}
+Latest version at \href{https://bit.ly/jidicula_resume}{bit.ly/jidicula_resume}}
 
 % Date command
 \newcommand{\lastupdated}{\color{date}\fontspec{Helvetica Neue Light}\fontsize{8pt}{10pt}\selectfont 
