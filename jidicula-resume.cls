@@ -1,8 +1,8 @@
 %% jidicula-resume.cls
-% Copyright 2020 Johanan Idicula
+% Copyright 2025 Johanan Idicula
 %
 % LICENSE
-% Copyright 2020 Johanan Idicula
+% Copyright 2025 Johanan Idicula
 
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either version 1.3
@@ -55,7 +55,7 @@
 
 % Live location command
 \newcommand{\livelocation}{\color{date}\fontspec{Helvetica Neue Light}\fontsize{8pt}{10pt}\selectfont\noindent
-Latest version at \href{https://bit.ly/jidicula_resume}{bit.ly/jidicula_resume}}
+Latest version at \href{https://forcepush.tech/resume}{forcepush.tech/resume}}
 
 % Date command
 \newcommand{\lastupdated}{\color{date}\fontspec{Helvetica Neue Light}\fontsize{8pt}{10pt}\selectfont 
